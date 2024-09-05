@@ -24,5 +24,5 @@ export class AppComponent {
     this.router.navigate([path]);
   }
   title = 'lola-app';
-  expandedSidenav = true;
+  expandedSidenav = false;
 }

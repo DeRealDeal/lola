@@ -1,17 +1,17 @@
 <mat-sidenav-container autosize>
-  <mat-sidenav #sidenav mode="side" opened>
+  <mat-sidenav #sidenav mode="side" opened >
     <div
-      class="d-flex flex-column h-100 w-auto justify-content-start align-content-start p-3 sidenav"
+      class="d-flex flex-column h-100 justify-content-start align-content-center  sidenav"
     >
       <div class="sidenav-button mb-2">
         <button class="btn" (click)="navigate('home')">
-            <mat-icon>home</mat-icon>
+            <mat-icon >home</mat-icon>
           <span *ngIf="expandedSidenav"> Home </span>
         </button>
       </div>
       <div class="sidenav-button mb-2">
-        <button class="btn" (click)="navigate('about')" routerLinkActive="active">
-            <mat-icon>waving_hand</mat-icon>
+        <button class="btn roboto-regular" (click)="navigate('about')" routerLinkActive="active">
+            <mat-icon class="waving-hand">waving_hand</mat-icon>
             <span *ngIf="expandedSidenav"> About me </span>
         </button>
       </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="mt-auto ms-auto sidenav-button">
         <button class="btn" (click)="expandedSidenav = !expandedSidenav">
-            <mat-icon>arrow_forward_ios</mat-icon>
+            <mat-icon class="arrow" [ngClass]="{rotated : expandedSidenav}">arrow_forward_ios</mat-icon>
         </button>
       </div>
     </div>
