@@ -1,62 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
-html,
+@font-face {
+  font-family: Gilroy;
+  src: url(assets/fonts/gilroy/Gilroy-Light.ttf) format("opentype");
+}
+html {
+  width: 100%;
+}
 body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto;
-}
-
-mat-sidenav-container {
-    height: 100%;
-
-}
-
-.sidenav {
-    background-color: #457769;
-    padding: 10px;
-        padding-right: 5px;
-        padding-left: 5px;
-    button {
-        color: white;
-    }
-}
-
-.mat-drawer {
-    width: auto !important;
-    border-radius: 0 !important;
-}
-
-.sidenav-button {
-    background-color: #ececec57;
-    border-radius: 5px;
-    text-align: center;
-.btn {
-        display: flex;
-        align-content: center;
-        padding: 6px;
-        font-family: Roboto !important;
-        font-weight: bold !important;
-
-    }
+  margin: 0;
+  font-family: Gilroy;
 }
 
 span {
-    padding-left: 2px;
+  padding-left: 2px;
 }
 
+mat-icon {
+  font-size: max(1.2vw, 22px) !important;
+}
 mat-icon.waving-hand {
-    font-size: 20px !important;
+  font-size: max(1vw, 18px) !important;
 }
 
 mat-icon.arrow {
-    transition: 300ms;
-    transform: rotate(0deg);
+  transition: 300ms;
+  transform: rotate(0deg);
 }
 
 mat-icon.arrow.rotated {
-    transition: 300ms;
-    transform: rotate(180deg);
+  transition: 300ms;
+  transform: rotate(180deg);
+}
+mat-sidenav {
+  border-width: 0 !important;
 }

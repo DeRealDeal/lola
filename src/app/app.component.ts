@@ -20,8 +20,8 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class AppComponent {
   constructor(private readonly router: Router) {}
-  navigate(path: string) {
-    this.router.navigate([path]);
+  current(path: string) {
+    return this.router.url.includes(path);
   }
   title = 'lola-app';
   expandedSidenav = false;

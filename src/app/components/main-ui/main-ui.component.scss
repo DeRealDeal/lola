@@ -1,0 +1,67 @@
+h1 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: min(13vw, 90px);
+}
+
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 8vw;
+  }
+  .custom-flex {
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .title {
+    top: 7vh !important;
+  }
+}
+
+.limit-width {
+  max-width: 90vw !important;
+}
+
+.title {
+  position: absolute;
+  left: 2vw;
+  top: 6.5vh;
+  width: max(30vw, 100px);
+  z-index: 1000;
+}
+
+.custom-font {
+  font-size: min(3vw, 20px) !important;
+}
+
+.app-logo {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+}
+
+#content {
+  margin-top: 10vh;
+  // margin-left: 11vw;
+  font-size: min(3vw, 20px);
+  font-stretch: 3%;
+
+  .image-container {
+    width: max(45vw, 860px) !important;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .fluid-img {
+    object-fit: fill;
+    overflow: hidden;
+    height: auto;
+    width: max(70vw, 880px) !important;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: min(4vw, 25px);
+  }
+}
