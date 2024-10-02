@@ -1,15 +1,10 @@
-h1 {
-  font-family: Roboto;
-  font-weight: 900;
-  font-size: min(13vw, 90px);
-}
-
 @media screen and (max-width: 1025px) {
   h1 {
     font-size: 8vw;
   }
   .custom-flex {
     display: flex !important;
+    margin-top: 20px;
   }
 }
 
@@ -36,22 +31,21 @@ h1 {
 }
 
 .app-logo {
-  height: 30px;
-  width: 30px;
+  height: max(1.5vw, 30px);
+  width: max(1.5vw, 30px);
+  margin-right: 0.5vw;
   object-fit: contain;
 }
-
+.image-container {
+  width: max(35vw, 860px) !important;
+  max-width: 100%;
+  overflow: hidden;
+}
 #content {
   margin-top: 10vh;
   // margin-left: 11vw;
   font-size: min(3vw, 20px);
   font-stretch: 3%;
-
-  .image-container {
-    width: max(45vw, 860px) !important;
-    max-width: 100%;
-    overflow: hidden;
-  }
 
   .fluid-img {
     object-fit: fill;
@@ -64,4 +58,8 @@ h1 {
     font-weight: 600;
     font-size: min(4vw, 25px);
   }
+}
+
+mat-icon {
+  font-size: max(1.2vw, 22px) !important;
 }

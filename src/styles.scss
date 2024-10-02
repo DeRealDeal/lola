@@ -15,9 +15,6 @@ span {
   padding-left: 2px;
 }
 
-mat-icon {
-  font-size: max(1.2vw, 22px) !important;
-}
 mat-icon.waving-hand {
   font-size: max(1vw, 18px) !important;
 }
@@ -33,4 +30,25 @@ mat-icon.arrow.rotated {
 }
 mat-sidenav {
   border-width: 0 !important;
+}
+h1 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: min(13vw, 90px);
+}
+h2 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: min(6vw, 90px);
+}
+h4,
+button {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: min(5vw, 35px);
+}
+label {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: min(5vw, 20px);
 }
