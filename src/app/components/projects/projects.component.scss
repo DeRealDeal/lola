@@ -1,0 +1,47 @@
+.rotated{
+    writing-mode: vertical-lr;
+    inline-size: fit-content;
+    transform: rotate(-180deg);
+    align-items: end;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.counter-rotated {
+    writing-mode: tb;
+    inline-size: fit-content;
+    transform: rotate(-180deg);
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+h2{
+    font-family: Roboto;
+    font-size: 64px;
+    text-align: center; 
+    letter-spacing: -2px;
+    font-weight: 900;
+    margin-bottom: 130px;
+   font-stretch: extra-condensed;
+
+}
+
+.project{
+    gap: 30px;
+   
+        
+}
+
+#connections{
+    background-color: #C3D6F7;
+    margin: 0px;
+
+ 
+}
+img{
+    object-fit: cover        ;
+    
+}
+.column{
+    gap: 30px
+}
