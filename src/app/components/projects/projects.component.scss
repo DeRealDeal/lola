@@ -17,19 +17,20 @@
 }
 h2{
     font-family: Roboto;
-    font-size: 64px;
+    // font-size: 64px;
     text-align: center; 
     letter-spacing: -2px;
     font-weight: 900;
-    margin-bottom: 130px;
+    margin-bottom: 1em;
    font-stretch: extra-condensed;
+   padding-right: 1em;
+   padding-left: 1em;
 
 }
 
-.project{
-    gap: 30px;
-   
-        
+.project, .column{
+    gap: 1.8vw;
+
 }
 
 #connections{
@@ -38,10 +39,21 @@ h2{
 
  
 }
+
+#sakura{
+    background-color: #eebbbb;
+    margin: 0px;
+
+ 
+}
 img{
-    object-fit: cover        ;
+    object-fit: cover ;
     
 }
-.column{
-    gap: 30px
+
+
+.image-container-custom-3 {
+    position: relative;  /* to be used on th eparent whenever using "fill" attribute of NgOptimisedImage */
+    aspect-ratio:1.6;
+    object-fit: cover;
 }

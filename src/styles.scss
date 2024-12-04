@@ -4,7 +4,8 @@
   src: url(assets/fonts/gilroy/Gilroy-Light.ttf) format("opentype");
 }
 html {
-  width: 100%;
+  position: absolute;
+  width: 100vw;
 }
 body {
   margin: 0;
