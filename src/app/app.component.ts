@@ -16,7 +16,7 @@ import { MainUiComponent } from './components/main-ui/main-ui.component';
     MainUiComponent,
     CommonModule,
     MatIconModule,
-    CarouselModule
+    CarouselModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

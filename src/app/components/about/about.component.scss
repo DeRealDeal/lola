@@ -17,6 +17,12 @@
 .limit-width {
   max-width: 90vw !important;
 }
+.row{
+  *{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
 
 .title {
   position: absolute;
@@ -37,9 +43,20 @@
   object-fit: contain;
 }
 .image-container {
-  width: max(35vw, 860px) !important;
-  max-width: 100%;
-  overflow: hidden;
+  position: relative;  /* to be used on th eparent whenever using "fill" attribute of NgOptimisedImage */
+
+  width: 90%;  /* set it to whatever you want */
+
+  aspect-ratio: 2;  /* width/height, require sqaure in my case */
+
+}
+.image-container-2 {
+  position: relative;  /* to be used on th eparent whenever using "fill" attribute of NgOptimisedImage */
+
+  width: 90%;  /* set it to whatever you want */
+
+  aspect-ratio: 2;  /* width/height, require sqaure in my case */
+
 }
 #content {
   margin-top: 10vh;
