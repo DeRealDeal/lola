@@ -1,10 +1,11 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MainUiComponent } from './components/main-ui/main-ui.component';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router, RouterOutlet } from '@angular/router';
+import { CarouselModule } from '@coreui/angular';
+import { MainUiComponent } from './components/main-ui/main-ui.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { DomSanitizer } from '@angular/platform-browser';
     MainUiComponent,
     CommonModule,
     MatIconModule,
+    CarouselModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

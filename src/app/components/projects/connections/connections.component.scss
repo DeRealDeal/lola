@@ -1,5 +1,5 @@
 p, ul{
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 40px;
 }
 
@@ -9,7 +9,7 @@ p, ul{
 
 h2 {
     font-family: Roboto;
-    font-size: 64px;
+    font-size: max(6vw, 40px);
     letter-spacing: -2px;
     font-weight: 900;
     font-stretch: extra-condensed;
@@ -17,7 +17,7 @@ h2 {
 }
 h3 {
     font-family: Roboto;
-    font-size: 45px;
+    font-size: max(4vw, 35px);
     letter-spacing: -2px;
     font-weight: 500;
     font-stretch: extra-condensed;
@@ -27,17 +27,25 @@ h3 {
 .image-container {
     position: relative;  /* to be used on th eparent whenever using "fill" attribute of NgOptimisedImage */
 
-    width: 10%;  /* set it to whatever you want */
+    width: 10rem;  /* set it to whatever you want */
 
     aspect-ratio: 1/1;  /* width/height, require sqaure in my case */
 
 }
+
 .image-container-custom {
     position: relative;  /* to be used on th eparent whenever using "fill" attribute of NgOptimisedImage */
     aspect-ratio:2;
+}
+.image-container-custom-2 {
+    position: relative;  /* to be used on th eparent whenever using "fill" attribute of NgOptimisedImage */
+    width: 60%;
+    aspect-ratio:3;
+    min-width: 20rem;
 }
 .image-container-custom-3 {
     position: relative;  /* to be used on th eparent whenever using "fill" attribute of NgOptimisedImage */
     aspect-ratio:1.6;
     object-fit: cover;
 }
+

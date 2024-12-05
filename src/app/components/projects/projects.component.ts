@@ -15,7 +15,15 @@ export class ProjectsComponent {
     private readonly router: Router
   ) {}
 
-  navigate(path: string) {
-    this.router.navigate([path], { relativeTo: this.activatedRoute });
+  navigate(path: string, relativeToParent = false) {
+    console.log(path, this.activatedRoute, relativeToParent)
+    if(relativeToParent){
+      this.router.navigate([path]);
+
+    }
+    else{
+
+      this.router.navigate([path], { relativeTo: this.activatedRoute });
+    }
   }
 }

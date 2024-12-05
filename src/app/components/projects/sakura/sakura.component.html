@@ -1,1 +1,67 @@
-<p>sakura works!</p>
+
+<div class="d-flex flex-column row-gap-3" id="project">
+    <div class="d-flex column-gap-5 row row-gap-3" >
+      <div class=" col-md-12 col-lg-6 image-container-custom-3">
+        <img
+        ngSrc="assets\images\sakura\sakura 4.png"
+        fill
+        priority
+        />
+      </div>
+      <div class="d-flex flex-column col-lg">
+        <h2 class="mb-5">SAKURA</h2>
+        <p class="mt-auto mb-auto">
+            A restaurant specially thought for women. We designed a space that combines japanese culture with the female essence, creating a relaxing environment to enjoy sushi or a cocktail with good companionship.
+            This project strived to be unique, from the mobiliary design to the material selection, offering our clients a place they always want to come back.
+        </p>
+      </div>
+    </div>
+   
+    <div class="d-flex justify-content-center">
+      <c-carousel [interval]="8000" class="image-container-custom-2">
+        <c-carousel-inner >
+          <c-carousel-item *ngFor="let slide of slides" >
+            <div class="d-flex image-container-custom"> <img
+              [ngSrc]="slide.src"
+              fill
+              priority
+              /></div>
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+      </c-carousel>
+    </div>
+    <div class="d-flex column-gap-5 row">
+      
+      <div class="d-flex flex-column col-lg">
+        <h3 class="mb-5 mt-5">MATERIALS</h3>
+        <div class="mt-auto mb-auto">
+          <p >
+            The materials that bring this project to life include:
+          </p>
+          <ul>
+            <li> Concrete</li>
+            <li> WPC pannels</li>
+            <li> Wallpaper</li>
+            <li> Wood and Melamine</li>
+          </ul>
+          <p >
+            The use of pink tones, flowers, wallpapers, and the warmth from wood evoque an intimate connection with the female essence, offering an experience both visual and emotional
+          </p>
+        </div >
+      </div>
+      <div class="col-md-12 col-lg-6 image-container-custom">
+        <img
+        ngSrc="assets\images\sakura\sakura corte 2.png"
+        fill
+        priority
+        />
+      </div>
+      
+      
+    </div >
+    
+  </div>
+  
+  
