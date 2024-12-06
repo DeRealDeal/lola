@@ -1,6 +1,9 @@
+*{
+  --green: #abdb98;
+}
 #form {
   border-radius: 20px;
-  background-color: #769c5c;
+  background-color:  var(--green);
   height: 100%;
   padding-top: 80px !important;
   padding-left: 80px !important;
@@ -38,12 +41,12 @@ p {
 input[type="text"],
 textarea {
   outline: none;
-  background-color: #769c5c;
+  background-color: var(--green);
   border-top: black !important;
   border-left: black !important;
   border-right: black !important;
   border-width: 3px;
-  font-family: Roboto;
+  font-family: Girloy;
   font-weight: 400;
   font-size: min(5vw, 18px);
 }
@@ -76,7 +79,7 @@ input[type="checkbox"] {
 
 .checkbox-wrapper-19 {
   box-sizing: border-box;
-  --background-color: #769c5c;
+  --background-color: var(--green);
   --checkbox-height: 25px;
 }
 

@@ -1,17 +1,23 @@
 h1 {
-  font-family: Roboto;
+  font-family: Gilroy;
   font-weight: 900;
-  font-size: min(13vw, 90px);
+  font-size: 7vw;
 }
 
-@media screen and (max-width: 1025px) {
-  h1 {
-    font-size: 8vw;
-  }
-  .custom-flex {
-    display: flex !important;
-  }
+p{
+  font-size: max(2vw, 11px);
 }
+
+.image-container {
+  --image_width: max(30vw, 170px);
+  position: relative;
+  width: var(--image_width);
+  aspect-ratio: 1 / 1;
+  border-radius: 50px;
+  clip-path: circle(calc(var(--image_width) / 2) at center);
+}
+
+
 
 @media screen and (min-width: 1400px) {
   .title {
