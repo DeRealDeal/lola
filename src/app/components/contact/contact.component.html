@@ -1,5 +1,76 @@
-<div class="d-flex m-3 full-height row">
-  <div class="col-5 d-flex flex-column">
+<div class="d-flex m-3 row">
+  <div class="col-12 col-md-7 p-5 d-flex flex-column" id="form">
+    <h2 class="col-8">Got ideas? I've got the skills. Let's team up.</h2>
+    <h3 class="mt-3 mb-5">
+      Tell me more about yourself and what you've got in mind.
+    </h3>
+    <div class="mb-4 d-flex flex-column">
+      <label for="name" class="pb-2">Your name</label>
+      <input type="text" name="name" id="name" autocomplete="off" />
+    </div>
+    <div class="mb-4 d-flex flex-column">
+      <label for="email" class="pb-2"> {{ "you@company.com" }}</label>
+      <input type="text" name="email" id="email" autocomplete="off" />
+    </div>
+    <div class="mb-4 d-flex flex-column">
+      <label for="description" class="pb-2"
+        >Tell me a little about the project</label
+      >
+      <textarea
+        type="textarea"
+        rows="3"
+        name="name"
+        id="description"
+        autocomplete="off"
+      ></textarea>
+    </div>
+    <div class="mb-4 d-flex flex-column">
+      <label class="pb-2">How can I help?</label>
+      <div class="d-flex flex-wrap justify-content-between">
+        <div class="col-md-6 col-12 mb-4">
+          <div class="checkbox-wrapper-19 d-flex">
+            <input type="checkbox" id="landscape" />
+            <label for="landscape" class="check-box me-2"></label>
+            <label for="landscape">Landscape design</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 mb-4">
+          <div class="checkbox-wrapper-19 d-flex">
+            <input type="checkbox" id="3D" />
+            <label for="3D" class="check-box me-2"></label>
+            <label for="3D">3D design</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 mb-4">
+          <div class="checkbox-wrapper-19 d-flex">
+            <input type="checkbox" id="arts" />
+            <label for="arts" class="check-box me-2"></label>
+            <label for="arts">Visual arts</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 mb-4">
+          <div class="checkbox-wrapper-19 d-flex">
+            <input type="checkbox" id="communication" />
+            <label for="communication" class="check-box me-2"></label>
+            <label for="communication">Social communication</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 mb-4">
+          <div class="checkbox-wrapper-19 d-flex">
+            <input type="checkbox" id="Other" />
+            <label for="Other" class="check-box me-2"></label>
+            <label for="Other">Other</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input
+      type="button"
+      class="btn btn-dark form-btn"
+      value="Let's get started!"
+    />
+  </div>
+  <div class="col-12 mt-5 mt-md-2 col-md-5 d-flex flex-column row">
     <div class="descriptions">
       <div class="d-flex mb-5">
         <button class="icon btn btn-outline-dark me-3">
@@ -32,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class="buttons mt-auto d-flex">
+    <div class="buttons mt-auto mb-md-4 d-flex justify-content-center">
       <button class="icon btn btn-outline-dark me-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -90,79 +161,5 @@
         </svg>
       </button>
     </div>
-  </div>
-  <div
-    class="col-12 col-md-7 order-first order-md-last p-5 d-flex flex-column"
-    id="form"
-  >
-    <h2 class="col-8">Got ideas? I've got the skills. Let's team up.</h2>
-    <h3 class="mt-3 mb-5">
-      Tell me more about yourself and what you've got in mind.
-    </h3>
-    <div class="mb-4 d-flex flex-column">
-      <label for="name" class="pb-2">Your name</label>
-      <input type="text" name="name" id="name" autocomplete="off" />
-    </div>
-    <div class="mb-4 d-flex flex-column">
-      <label for="email" class="pb-2"> {{ "you@company.com" }}</label>
-      <input type="text" name="email" id="email" autocomplete="off" />
-    </div>
-    <div class="mb-4 d-flex flex-column">
-      <label for="description" class="pb-2"
-        >Tell me a little about the project</label
-      >
-      <textarea
-        type="textarea"
-        rows="3"
-        name="name"
-        id="description"
-        autocomplete="off"
-      ></textarea>
-    </div>
-    <div class="mb-4 d-flex flex-column">
-      <label class="pb-2">How can I help?</label>
-      <div class="d-flex col-7 flex-wrap justify-content-between">
-        <div class="col-6 mb-4">
-          <div class="checkbox-wrapper-19 d-flex">
-            <input type="checkbox" id="landscape" />
-            <label for="landscape" class="check-box me-2"></label>
-            <label for="landscape">Landscape design</label>
-          </div>
-        </div>
-        <div class="col-6 mb-4">
-          <div class="checkbox-wrapper-19 d-flex">
-            <input type="checkbox" id="3D" />
-            <label for="3D" class="check-box me-2"></label>
-            <label for="3D">3D design</label>
-          </div>
-        </div>
-        <div class="col-6 mb-4">
-          <div class="checkbox-wrapper-19 d-flex">
-            <input type="checkbox" id="arts" />
-            <label for="arts" class="check-box me-2"></label>
-            <label for="arts">Visual arts</label>
-          </div>
-        </div>
-        <div class="col-6 mb-4">
-          <div class="checkbox-wrapper-19 d-flex">
-            <input type="checkbox" id="communication" />
-            <label for="communication" class="check-box me-2"></label>
-            <label for="communication">Social communication</label>
-          </div>
-        </div>
-        <div class="col-6 mb-4">
-          <div class="checkbox-wrapper-19 d-flex">
-            <input type="checkbox" id="Other" />
-            <label for="Other" class="check-box me-2"></label>
-            <label for="Other">Other</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <input
-      type="button"
-      class="btn btn-dark form-btn"
-      value="Let's get started!"
-    />
   </div>
 </div>

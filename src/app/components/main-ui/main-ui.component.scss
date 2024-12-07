@@ -1,7 +1,7 @@
 h1 {
   font-family: Gilroy;
   font-weight: 900;
-  font-size: 7vw;
+  font-size: min(7vw,90px);
 }
 
 p{
@@ -9,7 +9,7 @@ p{
 }
 
 .image-container {
-  --image_width: max(30vw, 170px);
+  --image_width: max(18vw, 170px);
   position: relative;
   width: var(--image_width);
   aspect-ratio: 1 / 1;

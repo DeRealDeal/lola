@@ -1,7 +1,7 @@
 <div class="d-flex flex-column column" (click)="navigate('connections')">
-  <div class="d-flex project">
+  <div class="d-flex project row m-0">
     <div
-      class="d-flex flex-column justify-content-between col"
+      class="d-flex flex-column justify-content-between col-12 col-md"
       id="connections"
     >
       <h5 class="rotated">El10Tv</h5>
@@ -16,7 +16,7 @@
       />
     </div>
   </div>
-  <div class="d-flex project" (click)="navigate('sakura')">
+  <div class="d-flex project row m-0" (click)="navigate('sakura')">
     <div class="col image-container-custom-3">
       <img
         ngSrc="assets\images\sakura\sakura 4.png"
@@ -25,7 +25,10 @@
         (click)="navigate('sakura')"
       />
     </div>
-    <div class="d-flex flex-column justify-content-center col-4" id="sakura">
+    <div
+      class="d-flex flex-column justify-content-center col-md-4 col-12"
+      id="sakura"
+    >
       <h2>SAKURA</h2>
     </div>
   </div>

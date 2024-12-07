@@ -3,10 +3,12 @@
 }
 #form {
   border-radius: 20px;
-  background-color:  var(--green);
+  background-color: var(--green);
   height: 100%;
-  padding-top: 80px !important;
-  padding-left: 80px !important;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: max(4vw,30px);
+  padding-bottom: max(4vw, 30px);
 }
 
 h3 {
